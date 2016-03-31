@@ -1,0 +1,7 @@
+mysql -u root -p
+create database yii_test character set utf8 collate utf8_unicode_ci;
+use yii_test;
+
+create user yii_test@localhost;
+set password for yii_test@localhost = PASSWORD('yii_test');
+grant all on yii_test.* to 'yii_test'@'localhost';
