@@ -29,8 +29,8 @@ A small web application for viewing and editing of news.
 
 cd /var/www
 git clone git://github.com/beresnev/News.git yii_test
-chmod -R 777 /var/www/yii_test/news/assets
-chmod -R 777 /var/www/yii_test/news/protected/runtime
+chown -R www-data:www-data /var/www/yii_test/news/assets
+chown -R www-data:www-data /var/www/yii_test/news/protected/runtime
 
 Если сервер в локальной сети, а не на хостинге, то в файл hosts того компьютера, 
 с которого будем заходить на сервер нужно добавить строку:
